@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:momma_app/screen/Welcome_Screen.dart';
+import 'package:momma_app/screen/walk_through.dart';
 
 void main() => runApp(const MyApp());
 
@@ -9,10 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: '/WelcomeScreen',
-      routes:{
-    '/WelcomeScreen':(context)=>const WelcomeScreen();
-    },
+      routes: {
+        '/WelcomeScreen': (context) => const WelcomeScreen(),
+        '/WalkThrough': (context) => const WalkThrough(),
+      },
     );
   }
 }
