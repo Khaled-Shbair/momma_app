@@ -12,9 +12,15 @@ class _WalkThroughState extends State<WalkThrough> {
   Widget build(BuildContext context) {
     return PageView(
       children: [
-        Container(color: Colors.red,),
-        Container(color: Colors.blue,),
-        Container(color: Colors.yellow,),
+        Container(
+          color: Colors.red,
+        ),
+        Container(
+          color: Colors.blue,
+        ),
+        Container(
+          color: Colors.yellow,
+        ),
       ],
     );
   }

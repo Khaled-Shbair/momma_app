@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -13,12 +12,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(
-      const Duration(seconds: 3),
-        (){
-        Navigator.pushReplacementNamed(context,'/WalkThrough');
-        }
-    );
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.pushReplacementNamed(context, '/WalkThrough');
+    });
   }
 
   @override
