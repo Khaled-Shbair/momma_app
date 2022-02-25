@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:momma_app/screen/Categories_screen.dart';
 import 'package:momma_app/screen/Login_Screen.dart';
+import 'package:momma_app/screen/Register_Screen.dart';
 import 'package:momma_app/screen/Welcome_Screen.dart';
 import 'package:momma_app/screen/walk_through.dart';
 
@@ -17,6 +19,8 @@ class MyApp extends StatelessWidget {
         '/WelcomeScreen': (context) => const WelcomeScreen(),
         '/WalkThrough': (context) => const WalkThrough(),
         '/LoginScreen': (context) => const LoginScreen(),
+        '/RegisterScreen': (context) => const RegisterScreen(),
+        '/CategoriesScreen':(context)=>const CategoriesScreen(),
       },
     );
   }
