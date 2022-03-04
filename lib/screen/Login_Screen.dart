@@ -21,17 +21,16 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     _textEditingControllerEmail = TextEditingController();
     _textEditingControllerPassWord = TextEditingController();
-    _tapGestureRecognizer = TapGestureRecognizer();
-    _tapGestureRecognizer.onTap = _navigatorToRegister;
+    _tapGestureRecognizer = TapGestureRecognizer()
+      ..onTap = _navigatorToRegister;
+    //_tapGestureRecognizer.onTap = _navigatorToRegister;
     super.initState();
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _tapGestureRecognizer.dispose();
     _textEditingControllerEmail.dispose();
     _textEditingControllerPassWord.dispose();
@@ -116,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 decoration: InputDecoration(
                   errorText: _errorPassWordText,
                   label: const Text(
-                    'Password',
+                    'PassWord',
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.w300,
@@ -202,17 +201,17 @@ class _LoginScreenState extends State<LoginScreen> {
               Center(
                 child: RichText(
                   text: TextSpan(
-                    recognizer: _tapGestureRecognizer,
                     text: 'Don’t have an account? ',
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w300,
                       color: Color(0xFF9391A4),
                     ),
-                    children: const [
+                    children: [
                       TextSpan(
+                        recognizer: _tapGestureRecognizer,
                         text: 'Sign up',
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF23203F),
@@ -264,6 +263,6 @@ class _LoginScreenState extends State<LoginScreen> {
         )
         .closed
         .then((value) =>
-            Navigator.pushReplacementNamed(context, '/CategoriesScreen'));
+            Navigator.pushNamed(context, '/CategoriesScreen'));
   }
 }

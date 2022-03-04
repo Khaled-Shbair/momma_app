@@ -64,6 +64,10 @@ flutter:
     - images/Add to cart.png
     - images/Enjoy Purchase!.png
     - images/welcome.png
+    - images/Categories1.png
+    - images/Categories2.png
+    - images/Categories3.png
+    - images/image.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
